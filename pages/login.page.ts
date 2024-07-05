@@ -9,6 +9,7 @@ class LoginPage extends Page {
     get passwordErrMsg(){return $('//android.view.ViewGroup[@content-desc="Password-error-message"]/android.widget.TextView')};
     get usernameErrMsg(){return $('//android.view.ViewGroup[@content-desc="Username-error-message"]/android.widget.TextView')};
    
+    //Steps to perform login to application
     public async performLogin (username: string, password: string) {
         await this.usernameInput.setValue(username);
         await this.passwordInput.setValue(password);
