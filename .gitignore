@@ -3,3 +3,4 @@ node_modules/
 
 #results or logs generated
 allure-results/
+allure-report/
