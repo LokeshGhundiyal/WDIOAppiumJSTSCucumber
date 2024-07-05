@@ -13,6 +13,7 @@ When(/^I login with (.*) and (.*)$/, async (username:string, password:string) =>
     await loginPage.performLogin(username, password);
 });
 
+//verifying error message based on user credentials entered
 Then(/^I should see error (.*) for (.*)$/, async(message:string, profile:string) => {
 	switch (profile) {
         case "LOCKED":
